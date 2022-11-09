@@ -95,13 +95,54 @@
 // console.log(setAge(obj1, 30));
 // console.log(obj1);
 
-const obj1 = {
-	name: 'User',
-	age: 20,
-};
+// const obj1 = {
+// 	name: 'User',
+// 	age: 20,
+// };
 
-for ( let key in obj1) {
-	console.log(key);
-	console.log(obj1[key]);
-	console.log(obj1['name']);
-}
+// for ( let key in obj1) {
+// 	console.log(key);
+// 	console.log(obj1[key]);
+// 	console.log(obj1['name']);
+// }
+
+// let str="stringify"; // ring, получаем 4 символа, начиная с позиции 2
+// console.log(str.substring(4, 1));
+
+
+// //  СОЗДАНИЕ ПРОМИСА
+//  const myPromise = new Promise((resolve, reject) => { //Обязательны эти два параметра. Эти параметры - функции.
+// 	/**
+// 	 * Выполение ассинхронных действий
+// 	 * 
+// 	 * внутри этой функции нужно в результате вызвать одну из функций resolve или reject (Исполнил или отклонен)
+// 	 */
+//  });
+
+// // Получение результата Промиса
+// myPromise
+// .then ((value) => {
+// 	/**
+// 	 * Действия в случае успешного исполнения Промиса
+// 	 * Значение value - значение, переданное в вызове функции resolve внутри Промиса
+// 	 */
+// })
+// .catch((error) => {
+// 	/**
+// 	 * Действия в случае отклонения промиса
+// 	 * Значение error - это значение, переданное в вызове функции reject внутри Промиса
+// 	 */
+// })
+
+
+// fetch('https://jsonplaceholder.typicode.com/todos') //когда отправляем fetch запрос, fetch возвращает(создает) промис, в сосотоянии pending
+// .then (response => response.json()) // Метод json возвращает промис
+// .then (json => console.log(json)) // Для этого промиса вызываем метод then
+// .catch (error => console.error(error))
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+.then (response => {
+	console.log(response);
+	return response.json()
+})
+.then (json => console.log(json))
+.catch (error => console.error(error))
