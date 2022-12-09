@@ -137,3 +137,15 @@ h2 {
 .menu {
 	font-size: 18px;
 }
+
+.container {
+	width: 200px;
+	height: 200px;
+	background-color: #7a956b;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: #794f45;
+}
