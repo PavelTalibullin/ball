@@ -9,7 +9,7 @@
 // myArr.push('Пять');
 // console.log(myArr);
 
-// myArr.shift()
+// myArr.shift()и
 // console.log(myArr);
 
 // myArr.unshift('Один');

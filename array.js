@@ -30,19 +30,29 @@
 
 //					Преобразование массива
 //map()
-//split()																!!!!!!!!!!!!!!!!!!
+//split()
 //join()
 
 //					Проверка
-//Array.isArray()
+//Array.isArray(агрумент) - проверяет массив или нет(true или false).
+// Ну или можно через if else 
 
 //					Перебор в массиве
-//цикл for
-//цикл for..of
-//forEach
+//цикл for								+
+//цикл for..of							+
+//forEach(item, index, array)								+
 
 
-//reduce()
-//reduceRight()
+//reduce()								+
+//reduceRight()						+
+
+
+// const arr = [14,2,5,1,23];
+// const str = ['a', 's', 'd', 'f', 'g'];
+// const obj = [
+// 	{name: 'pasha', age: 27,},
+// 	{name: 'nastya', age: 22,},
+// 	{name: 'Messi', age: 35,},
+// ];
 
 

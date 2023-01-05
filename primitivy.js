@@ -1,38 +1,55 @@
 'use strict'
 
-let number = 12.64567;
-let number2 = 14;
-let number3 = 9;
-let string = '123reth';
-let string2 = '13.23';
-// Методы NUMBER
-console.log(Math.floor(number));
-console.log(Math.ceil(number));
-console.log(Math.round(number));
-console.log(Math.trunc(number));
-console.log(number.toFixed(3)); // Возвращает строку. Если указали значение больше чем чисел после запятой, добавляются нули
-// Методы проверок
-console.log(isNaN(number))
-console.log(isFinite(number))
-// Преобразования
-console.log(parseInt(string));
-console.log(parseInt(string2));
-console.log(parseFloat(string2));
-console.log(string.toString());
-//Другие фукнции
-const random = Math.random();
-console.log(random);
+const numberOne = 10;
+const numberTwo = 12.12345
+const string = "str"
+const bool = true;
+const boolF = false;
+const array1 = [1,2,3]
+const array2 = [4,5,6]
 
-console.log(Math.max(number, number2, number3));
-console.log(Math.min(number, number2, number3));
-console.log(Math.pow(number2, number3));
-//Операции над числами
-const proc = 10 % 4; //  %
-console.log(proc);
+const numberRound = Math.floor(numberTwo)
+console.log(numberRound);
+const numberRound1 = Math.ceil(numberTwo)
+console.log(numberRound1)
+const numberR2 = Math.round(numberTwo);
+console.log(numberR2)
+const nr3 = Math.trunc(numberTwo);
+console.log(nr3)
+const nr4 = numberTwo.toFixed(4);
+console.log(nr4);
 
-console.log(proc**4); //  ** 
-console.log(proc < 3); //  > <  == >=   <=
+// ПРОВЕРКА
+// const proverka = isNaN(numberOne)
+// const proverka2 = isFinite(numberOne)
+// console.log(isNaN(string))
+// console.log(isFinite(string))
+// console.log(proverka)
+// console.log(proverka2)
+// console.log(isNaN(bool))
+// console.log(isNaN(boolF))
+// console.log(isFinite(boolF))
+// console.log(isFinite(bool))
+
+// console.log(isNaN(NaN))
+// console.log(NaN === NaN)
+// console.log(isNaN(Infinity))
+
+// console.log(Number.isNaN(string))
+// console.log(isNaN(string))
+
+// console.log(Object.is(string, bool)) // Работает как string === bool
+// console.log(Object.is(boolF, boolF))
+
+// console.log(true + false)
+// console.log([...[1,2,'f'], ...['d',5,6]])
+
+// ПРЕОБРАЗОВАНИЕ
+// const numberStr = +string;
+// console.log(numberStr);
 
 
-//STRING
-
+console.log(string.charAt(2))
+console.log(string.indexOf('r'))
+console.log(string.startsWith('s'))
+console.log(string.startsWith('10'))

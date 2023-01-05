@@ -1,20 +1,34 @@
-// Прочитать про рекурсию функции.
-// Прочитать про планирование setTimout и setInterval
-// функции callback
+'use strict'
 
 
-function showMessage() {
-	let message = 'Привет, я Паша';
-	alert(message);
-}
-showMessage();
+// Pure функции (чистые функции)
+// function squad (n) {
+// 	return n**2
+// }
+// console.log(squad(4))
+// console.log(squad(4))
+// console.log(squad(4))
+// console.log(squad(4))
 
+// function hello () {
+// 	console.log("Hello")
+// };
+// hello.hi = 123; // 123. Ошибки не будет 
 
-const dance = 'самбу';
+// function pOdd() {
+// 	console.log('odd')
+// }
+// function pEven() {
+// 	console.log('Even')
+// }
 
-function showMessageTwo() {
-	let message = 'Я люблю танцевать' + ' ' + dance
-	alert(message);
-}
-showMessageTwo()
+// function myNumber (n, odd, even) {
+// 	if (n % 2 ===0) return even;
+// 	else return odd;
+// }
 
+// let f = myNumber(5, pOdd, pEven)
+// // console.log(z);
+// f();
+
+ 
